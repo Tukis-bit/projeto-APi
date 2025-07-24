@@ -128,10 +128,17 @@ api.post('/calcular/media', (req,resp) => {
 })
 
 //{
- //"n1": 6,
+// "n1": 6,
 // "n2":7,
-//  "n3":8
+// "n3":8
 //}
+
+api.post('/pessoa/infos', (req,resp) => {
+    let nome = req.body.nome;
+    let idade = req.body.idade;
+
+    resp.send('Olá ' +nome + ',legal saber que você tem ' + idade + 'anos');
+})
 
 
 
